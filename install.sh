@@ -6,6 +6,8 @@ cd fonts
 ./install.sh
 cd .. && rm -rf fonts
 
+sudo apt-get update && sudo apt-get install -y vim
+
 # oh-my-zsh plugins
 zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
 zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
@@ -16,3 +18,4 @@ zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH
 
 cp .zshrc ~/.zshrc
 echo "export DEFAULT_USER=$(whoami)" >> ~/.zshrc
+echo "export EDITOR=vim" >> ~/.zshrc
