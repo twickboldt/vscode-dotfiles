@@ -7,6 +7,7 @@ installs
 - Powerline Fonts
 - zsh-autosuggestions plugin
 - zsh-syntax-highlighting plugin
+- terraform plugin
 
 configures
 
